@@ -547,7 +547,7 @@ sub find_metadata_in_release
     my ( $release_uri, $release_path, $line ) = '';
     my $component_regex = undef;
     my $arch_regex = "(?:${arch}|all)";
-    my $compressed_extension_regex = '(?:\.(?:gz|bz2|xz))$';
+    my $compressed_extension_regex = '(?:\.(?:gz|bz2|xz))?$';
     my $dist_uri;
     my $hash_type_regex = "(?:" . join("|", @hash_strength) . ")";
 
